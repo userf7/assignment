@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iPhoneVerse - Purchase Form</title>
+</head>
+<body>
+
+    <h1 align="center">Purchase Form</h1>
+    
+    <table border="1" align="center" cellpadding="10" cellspacing="0">
+        <tr>
+            <td><a href="home.html">Home</a></td>
+            <td><a href="product.html">Product</a></td>
+            <td><a href="promotion.html">Promotion</a></td>
+            <td><a href="gallery.html">Gallery</a></td>
+            <td><a href="form.html">Form</a></td>
+        </tr>
+    </table><br>
+
+    <form action="submit_order.php" method="post">
+        <table border="1" align="center" cellpadding="10" cellspacing="0">
+            <tr>
+                <td><label for="name">Full Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" rows="4" cols="30" required></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="model">Select iPhone Model:</label></td>
+                <td>
+                    <select id="model" name="model" required>
+                        <option value="iPhone16">iPhone 16</option>
+                        <option value="iPhone16Pro">iPhone 16 Pro</option>
+                        <option value="iPhone16ProMax">iPhone 16 Pro Max</option>
+                        <option value="iPhone15">iPhone 15</option>
+                        <option value="iPhone15Pro">iPhone 15 Pro</option>
+                        <option value="iPhone15ProMax">iPhone 15 Pro Max</option>
+                        <option value="iPhone14">iPhone 14</option>
+                        <option value="iPhone14Pro">iPhone 14 Pro</option>
+                        <option value="iPhone14ProMax">iPhone 14 Pro Max</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Submit Order"></td>
+            </tr>
+        </table>
+    </form>
+    
+    <br>
+    <div align="center">
+        <a href="home.html">Back to Home</a>
+    </div>
+
+</body>
+</html>
